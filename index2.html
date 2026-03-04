@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <script src="https://js.zohostatic.com/creator/widgets/version/2.0/widgetsdk.min.js"></script>
+</head>
+<body>
+  <div id="s1">Waiting...</div>
+  <div id="s2"></div>
+  <script>
+    document.getElementById("s1").textContent = "SDK script tag present.";
+    ZOHOCREATOR.init().then(function() {
+      document.getElementById("s2").textContent = "SUCCESS — init() resolved!";
+    }).catch(function(e) {
+      document.getElementById("s2").textContent = "FAILED: " + JSON.stringify(e);
+    });
+  </script>
+</body>
+</html>
