@@ -1,7 +1,5 @@
 {
   "pluginName": "DMS API Test",
   "version": "1.0",
-  "type": "component",
-  "mainScript": "app.js",
-  "indexFile": "index.html"
+  "type": "component"
 }
